@@ -36,10 +36,8 @@ spring:
         connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
 
 mybatis:
-  #config-location: classpath:mybatis/mybatis.cfg.xml   #可以写成文件也可以直接写出来，直接写出来好内容不多
-  type-aliases-package: com.cml.springcloud.entities    #mybatis里还要写出映射实体类的包
-  mapper-locations:
-  - classpath: mapper/*.xml
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.cml.springcloud.entities
   configuration:
     map-underscore-to-camel-case: true #开启驼峰命名
     cache-enabled: true #开启二级缓存
@@ -91,10 +89,8 @@ spring:
         connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
 
 mybatis:
-  #config-location: classpath:mybatis/mybatis.cfg.xml   #可以写成文件也可以直接写出来，直接写出来好内容不多
-  type-aliases-package: com.cml.springcloud.entities    #mybatis里还要写出映射实体类的包
-  mapper-locations:
-  - classpath: mapper/*.xml
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.cml.springcloud.entities
   configuration:
     map-underscore-to-camel-case: true #开启驼峰命名
     cache-enabled: true #开启二级缓存
